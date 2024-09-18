@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Nirmala UI';
-  src: url('fonts/NirmalaUI-Regular.woff2') format('woff2');
+  src: url('../fonts/NirmalaUI-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Nirmala UI';
-  src: url('fonts/NirmalaUI-Bold.woff2') format('woff2');
+  src: url('../fonts/NirmalaUI-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -59,9 +59,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  /* background: linear-gradient(172deg, #eb5d38 40%, #ffd600 65%); */
-  background: linear-gradient(178deg, #eb5d38 0%, #ffd600 50%);
-  text-shadow: 0 4px 20px 0 rgba(255, 213, 54, 0.5);
+  background: linear-gradient(172deg, #eb5d38 55%, #ffd600 65%);
+  text-shadow: 0 4px 20px rgba(255, 213, 54, 0.5);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,6 +83,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--light-color);
+  border-radius: 10px;
   box-shadow: 4px 4px 20px 0 rgba(255, 255, 255, 0.4);
   background: linear-gradient(159deg, #ffe53b 0%, #ff2525 92.71%);
 }
@@ -324,7 +324,6 @@ img {
   max-width: 463px;
   width: 100%;
   min-width: 330px;
-  border-radius: 10px;
 }
 
 /* warning section  */
@@ -390,7 +389,6 @@ img {
   .btn {
     font-size: 28px;
     line-height: 100%;
-    border-radius: 7px;
     height: 70px;
   }
 
@@ -471,14 +469,13 @@ img {
     width: 30px;
     height: 30px;
   }
-  .btn {
-    font-size: 24px;
-    border-radius: 5px;
-    height: 56px;
-  }
 
   .title {
     -webkit-text-stroke: 1px white;
+  }
+  .btn {
+    font-size: 24px;
+    height: 56px;
   }
 
   /* explore */
@@ -537,9 +534,6 @@ img {
   }
   .choose__btn {
     margin-top: 20px;
-    border-radius: 5px;
-    padding: 16px 0px;
-    height: 56px;
   }
 
   /* warning  */
@@ -554,13 +548,16 @@ img {
   .warning__img:nth-child(1) {
     width: 95vw;
   }
+
+  .warning__btn {
+    border-radius: 5px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .btn {
     font-size: 24px;
     line-height: 100%;
-    border-radius: 5px;
     padding: 16px;
     height: 56px;
   }
@@ -587,10 +584,6 @@ img {
     margin: 0;
     gap: 10px;
   }
-  .explore__btn {
-    border-radius: 10px;
-  }
-
   /* choose  */
 
   .choose__title {
@@ -614,7 +607,6 @@ img {
   }
   .choose__btn {
     margin-top: 20px;
-    border-radius: 5px;
     padding: 16px 0px;
     height: 56px;
   }
